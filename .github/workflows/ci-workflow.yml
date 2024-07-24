@@ -265,7 +265,7 @@ jobs:
             experimental-features = nix-command flakes
             ${{inputs.nix_conf}}
           nix_version: ${{inputs.nix_version}}
-      - uses: nixbuild/nixbuild-action@master
+      - uses: kfollesdal/nixbuild-action/.github/workflows/ci-workflow.yml@patch-2
         with:
           nixbuild_token: ${{secrets.nixbuild_token}}
           caches: ${{inputs.caches}}
