@@ -214,7 +214,7 @@ jobs:
 
   eval-flake:
     name: "Evaluate flake"
-    runs-on: ubuntu-latest
+    runs-on: [ ubuntu-latesti, arm ]
     outputs:
       builds: ${{ steps.find-builds.outputs.builds }}
     steps:
